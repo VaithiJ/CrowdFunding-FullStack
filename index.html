@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1{
+            color: blueviolet;
+            text-align: center;
+            border-style: groove;
+            font-style: italic;
+           
+            
+        }
+        body{
+            background-color: lightgoldenrodyellow;
+            background-position: left -150px top -100px ;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+        p{
+            color:black;
+            position: absolute;
+            right: 450px;
+            border-style: double;
+            border-radius: 30px;
+            padding: 20px;
+            height: 500px;
+            line-height: 33px;
+            justify-content: center;
+        }
+        .Github{
+            position: absolute;
+            top: 650px;
+            right: 15px ;
+            background-color: blueviolet;
+            color:white;
+            border-style: double; 
+            border-color: blue; 
+            border-radius: 20px;
+            font-size: 20px;
+
+        }
+     
+    </style>
+    <title>fund_me_app</title>
+</head>
+<body> <h1>CROWD FUNDING</h1>
+    <p> <b><i><u>ABOUT THE PROJECT:</b></i></u><br>
+        1. Created a Smart Contract named "Fundme.sol" using Solidity. <br>
+        2. The contract prompts the user to fund "Ethereum" tokens using fund function.<br> 
+        3. The deployment scripts are written using Node.js and Javascript and tested on Hardhat environment. <br> 
+        4. The contract can be made to work in Ethereumm mainnet and other networks by adding <br> 
+        the corresponding RPC_Url and modifying the helper-hardhat-config.js file <br>
+        5. Both unit testing and stage testing are carried out and verified. <br>
+        6. The contract is passed to the Etherscan and was verified. It can be checked using the contract address <br>
+              <u>"0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512"</u><br>
+        7. The contract is written in a manner that only the owner can withdraw the funds.<br>
+        <b><i><u>USECASE OF BUTTONS:</b></i></u><br>
+        1. CONNECT WALLET = Connects to the MetaMask wallet(Reverts if MetaMask is not installed) <br>
+        2. FUND = Can be used to initiate the funding transaction. <br>
+        3. BALANCE = On clicking, it shows the total amount of fund being collected in Ethers. <br>
+        4. WITHDRAW = The funds can be withdrawn by the owner who calls the contract. 
+    </p>
+    
+    
+<script src="./index.js" type="module"></script>
+<button style="position: absolute;top: 100px;right: 20px ;background:blueviolet;color:white; border-style: double; border-radius: 20px; border-color: blue; font-size: 20px;" id="connectButton">Connect Wallet</button>
+<button style="position: absolute;top: 130px;left: 140px;padding:0px 67px 0px 67px;background-color: blueviolet;color:white;border-style: double; border-color: blue; border-radius: 20px; font-size: 20px;" id="fundButton">Fund</button>
+<button style="position: absolute;top: 150px;right: 15px;padding:0px 40px ;background-color: blueviolet;color:white;border-style: double; border-color: blue; border-radius: 20px;font-size: 20px;" id="balanceButton">Balance</button>
+<button style="position: absolute;top: 200px;right: 15px;padding:0px 35px;background-color: blueviolet;color:white;border-style: double; border-color: blue; border-radius:20px;font-size: 20px;" id="withdrawButton">Withdraw</button>
+<button class="Github" onclick="window.location.href = 'https://github.com/VaithiJ';">
+    Github
+</button>
+
+<label style="color:blueviolet ; font-size: 20px;"for="fundButton">ETH(Amount) : </label>
+<input style="padding: 5px; background-color: transparent; border-style: solid; border-color: blueviolet; color: blueviolet;border-radius:20px;" id="ethAmount"  placeholder="0.1"/>
+</body>   
+
+
+</script>
+</html>
